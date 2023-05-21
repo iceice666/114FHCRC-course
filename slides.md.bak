@@ -1,0 +1,84 @@
+---
+theme: default
+layout: cover
+---
+
+# 資訊學習之路
+## <small> 講者：段奕丞 </small>
+
+---
+layout: cover
+---
+
+## Q: 各位覺得學習程式語言是否要有一台電腦？
+
+
+<v-click>
+<h2> A: 對也不對 </h2>
+</v-click>
+
+---
+layout: default
+---
+
+# 0x01 自學的契機
+
+
+<div class="grid grid-cols-2 gap-1">
+<div>
+
+
+![](/minecraftmod.jpg)
+
+</div>
+<div>
+
+### Minecraft 模組設計
+
+這本書是在我小四時期，我爸爸買給我的，當時我還不會寫程式，但是我很喜歡玩 Minecraft，所以我就開始看這本書，這本書教我如何寫 Minecraft 模組，我也是從這本書開始學習程式語言的。
+
+</div>
+</div>
+
+---
+layout: default
+---
+
+# 0x01 自學的契機
+
+<img align="right" arc="/java.jpg" />
+
+
+### Java
+
+由於Minecraft Java Editon 是用 Java 寫的，所以我也開始學習 Java，我也是從這本書開始學習 Java 的。
+當然，一開始能看得懂的幾乎寥寥無幾，我依稀記得我在`public` `protected` `private`這些關鍵字上面卡了很久，雖然最後還是沒有讀懂，但是我也從這本書開始資訊學習之路。
+
+> 我家甚至還有一本2016 sql server 的書 (hhh
+
+
+<!--在這個時候之前都是沒有使用電腦的，把頭腦當成解釋器-->
+
+---
+layout: default
+---
+
+# 0x01 自學的契機
+
+![](python.jpg)
+
+### Python 和 PyQt5
+
+在我小五時期，我開始學習 Python，我是從這本書開始學習 Python 的。
+而受Java AWT的影響，我也接觸到了 PyQt5。
+
+---
+layout: default
+---
+
+最後：送各位兩句話
+
+- 心有所向、日復一日、必有精進
+- 種一棵樹最好的時間是十年前，其次是現在
+
+謝謝各位

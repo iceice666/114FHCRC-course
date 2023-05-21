@@ -3,12 +3,19 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "dev": "slidev",
     "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.41.0",
+    "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.13",
+    "@iconify-json/logos": "^1.1.31",
+    "@iconify-json/mdi": "^1.1.52",
+    "@iconify-json/ri": "^1.1.9"
   }
 }

@@ -4,12 +4,29 @@ dependencies:
   '@slidev/cli':
     specifier: ^0.41.0
     version: 0.41.0(postcss@8.4.23)(react-dom@16.14.0)(react@16.14.0)
+  '@slidev/theme-apple-basic':
+    specifier: ^0.20.0
+    version: 0.20.0
   '@slidev/theme-default':
     specifier: latest
     version: 0.21.2
   '@slidev/theme-seriph':
     specifier: latest
     version: 0.21.3
+
+devDependencies:
+  '@iconify-json/ic':
+    specifier: ^1.1.13
+    version: 1.1.13
+  '@iconify-json/logos':
+    specifier: ^1.1.31
+    version: 1.1.31
+  '@iconify-json/mdi':
+    specifier: ^1.1.52
+    version: 1.1.52
+  '@iconify-json/ri':
+    specifier: ^1.1.9
+    version: 1.1.9
 
 packages:
 
@@ -561,15 +578,38 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/ic@1.1.13:
+    resolution: {integrity: sha512-5i5zal/VRwTrs99iMTnG1Zu97bgX9Mkiu9TzR1U1rHBylUnBW+HkOweoQVEPgQITGG024/lNbZxU+3Aa2xuDww==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos@1.1.31:
+    resolution: {integrity: sha512-15u8OWZREIS02+ZRS6sXJ6AfhsK2+p5dw2XvMsMd0UJKGNvRmL1STPdHXtOhOe7lQ/YsmcvtpZXDJfcdBmcoPQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.52:
+    resolution: {integrity: sha512-tLzpFcmoGw1/jHcl+BshUd4bqvP4755OUluaARsuKskTp2aIPIAkRQOhzJGpry9CZ0i82z0alq4HrKrp9uvj4A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/ph@1.1.5:
     resolution: {integrity: sha512-iLXq3nohfGge22gL2tZmQ2WHBKkKkIbGWrkuyC8arckS4PWaONyh4A+uDPtSek9QbYDvi9AE2+NxWkNZhANotA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/ri@1.1.9:
+    resolution: {integrity: sha512-YOSBce/bzkORxBI1mYz4b9vidaJDeorwzuddFoIV9ajazncI55VLtQ+puIra0d3HQhYfswNSwRy8PrHTZmvaOg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils@2.1.5:
     resolution: {integrity: sha512-6MvDI+I6QMvXn5rK9KQGdpEE4mmLTcuQdLZEiX5N+uZB+vc4Yw9K1OtnOgkl8mp4d9X0UrILREyZgF1NUwUt+Q==}
@@ -895,6 +935,16 @@ packages:
     dependencies:
       '@slidev/types': 0.41.0
       js-yaml: 4.1.0
+    dev: false
+
+  /@slidev/theme-apple-basic@0.20.0:
+    resolution: {integrity: sha512-sjgxAyn63TNHsiwT/Iz2D8IjpuOg/x8l+nG2TTH3zg8XChIo7uYcNNApWH+i5zuBfaNHHUOaGLPaZw5s6fINQg==}
+    engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
+    dependencies:
+      '@slidev/types': 0.22.7
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.4
+      theme-vitesse: 0.1.14
     dev: false
 
   /@slidev/theme-default@0.21.2:

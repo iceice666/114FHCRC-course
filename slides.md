@@ -7,7 +7,7 @@ fonts:
   # 用于代码块、内联代码等
   mono: 'Noto Sans Mono'
 layout: intro
-theme: apple-basic
+theme: default
 ---
 
 # 報告、筆記的好幫手
@@ -28,12 +28,14 @@ Markdown 的優勢包括：
 - 清晰結構：Markdown 的標記語法直觀明確，使得文本的結構和內容易於理解和閱讀。
 - 多格式轉換：Markdown 可以方便地轉換為其他格式，如 HTML、PDF、Word 等，使得文檔在不同平台和場景中的使用更加靈活。
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 
 
 ## 1. 標題
+
+
 ```md
 # 一級標題
 ## 二級標題
@@ -42,9 +44,26 @@ layout: image-right
 ##### 五級標題
 ###### 六級標題
 ```
+::right::
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+# 一級標題
+
+## 二級標題
+
+### 三級標題
+
+#### 四級標題
+
+##### 五級標題
+
+###### 六級標題
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 
@@ -60,8 +79,22 @@ layout: image-right
 
 ```
 
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+這是一個段落
+
+這是另一個段落
+
+如果有需要，可使用<br/>強制換行
+
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 
@@ -69,12 +102,33 @@ layout: image-right
 ## 3. 字體樣式
 ```md
 *斜體*
+
 **粗體**
+
 ***粗斜體***
+
 <u>底線</u>
 ```
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+*斜體*
+
+**粗體**
+
+***粗斜體***
+
+<u>底線</u>
+
+
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 
@@ -83,11 +137,21 @@ layout: image-right
 ```md
 [link](http://example.com)
 
-![](https://i.pximg.net/img-original/img/2023/05/16/14/57/30/108174609_p0.png)
+![](https://example/image.jpg)
 ```
+::right::
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+[link](http://example.com)
+
+![](https://i.pximg.net/img-original/img/2023/05/16/14/57/30/108174609_p0.png)
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 ## 5. 引言 (quote)
@@ -115,7 +179,7 @@ layout: image-right
 
 ```
 ---
-layout: image-right
+layout: two-cols
 ---
 # Markdown 語法
 ## 6. 列表

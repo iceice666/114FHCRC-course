@@ -90,10 +90,39 @@ layout: image-right
 layout: image-right
 ---
 # Markdown 語法
+## 5. 引言 (quote)
+
+```md
+
+> 這是一個單行引言
+
+> 這是
+一個
+多行
+引言
+
+> 多個單行引言
+> 合併起來
+> 就變成了多行引言
+
+> 引言裡也可以嵌套引言
+> 引言裡也可以包含其他語法
+> # 這是一個標題
+> ## 這是一個次標題
+> 這是內文
+> > 這是一個嵌套的引言
+> bra bra bra ...
+
+```
 ---
 layout: image-right
 ---
 # Markdown 語法
+## 6. 列表
+```md
+- 可以使用減號
++ 加號也可以
+```
 ---
 layout: default
 ---

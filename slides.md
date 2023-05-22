@@ -122,6 +122,7 @@ layout: image-right
 ```md
 - 可以使用減號
 + 加號也可以
+* 星號也能
 ```
 ---
 layout: default

@@ -32,13 +32,6 @@ layout: image-right
 ---
 # Markdown 語法
 
-<style>
-    code {
-        font-size: 20px;
-    }
-
-
-</style>
 
 ## 1. 標題
 ```md
@@ -50,6 +43,57 @@ layout: image-right
 ###### 六級標題
 ```
 
+---
+layout: image-right
+---
+# Markdown 語法
+
+## 2. 段落和換行
+
+```md
+
+這是一個段落
+
+這是另一個段落
+
+如果有需要，可使用<br/>強制換行
+
+```
+
+---
+layout: image-right
+---
+# Markdown 語法
+
+
+## 3. 字體樣式
+```md
+*斜體*
+**粗體**
+***粗斜體***
+<u>底線</u>
+```
+---
+layout: image-right
+---
+# Markdown 語法
+
+## 4. 鏈結
+
+```md
+[link](http://example.com)
+
+![](https://i.pximg.net/img-original/img/2023/05/16/14/57/30/108174609_p0.png)
+```
+
+---
+layout: image-right
+---
+# Markdown 語法
+---
+layout: image-right
+---
+# Markdown 語法
 ---
 layout: default
 ---

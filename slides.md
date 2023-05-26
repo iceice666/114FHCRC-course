@@ -27,6 +27,10 @@ Markdown 的優勢包括：
 - 跨平台支持：Markdown 可以在任何文本編輯器中編寫，並且幾乎所有的瀏覽器和應用程序都支持 Markdown 的閱讀和展示。
 - 清晰結構：Markdown 的標記語法直觀明確，使得文本的結構和內容易於理解和閱讀。
 - 多格式轉換：Markdown 可以方便地轉換為其他格式，如 HTML、PDF、Word 等，使得文檔在不同平台和場景中的使用更加靈活。
+
+
+### Try try see : [HackMD](https://hackmd.io/new)
+
 ---
 layout: two-cols
 ---
@@ -234,9 +238,19 @@ layout: two-cols
 
 114. 當然如果你要亂序排列
 514. 也是可行的
+
+項目清單很可能會不小心產生，像是下面這樣的寫法
+
+1986. What a great season.
+
+以上的結果並不是我們希望的
+要避免的話，我們可以加上反斜線
+
+
+1986\. What a great season.
+
 ```
 ::right::
-<br/>
 <br/>
 <br/>
 <br/>
@@ -251,6 +265,13 @@ layout: two-cols
 
 114. 當然如果你要<del>塞私貨</del>亂序排列
 514. 也是可行的
+
+項目清單很可能會不小心產生，像是下面這樣的寫法
+1986. What a great season.
+
+以上的結果並不是我們希望的，要避免的話，我們可以加上反斜線
+
+1986\. What a great season.
 
 ---
 layout: two-cols
@@ -269,15 +290,68 @@ layout: two-cols
   女朋友就是私有变量，只有我这个类才能调用；
   情人就是指针，用的时候一定要注意，要不然就带来巨大的灾难。
 
+- [ ] 列表和TODO一起食用效果更佳
+- [x] 在TODO中使用x來標記這個TODO是否完成
+
 ```
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+- 要讓清單看起來更漂亮，可以使用縮排
+
+- 爱情
+
+  爱情就是死循环，一旦执行就陷进去了；
+  爱上一个人，就是内存泄漏–你永远释放不了；
+  真正爱上一个人的时候，那就是常量限定，永远不会改变；
+  女朋友就是私有变量，只有我这个类才能调用；
+  情人就是指针，用的时候一定要注意，要不然就带来巨大的灾难。
+
+- [ ] 列表和TODO一起食用效果更佳
+- [x] 在TODO中使用x來標記這個TODO是否完成
 
 ---
-layout: default
+layout: two-cols
 ---
+# Markdown 語法
+## 7. 表格
 
-# try try see
 
-### HackMD : [Link](https://hackmd.io/new)
+```md
+利用`|` 和 `-` 來創建表格
+|foo|bar|
+|---|---|
+|abc|xyz|
+|114514|1919810|
+```
+::right::
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+|foo|bar|
+|---|---|
+|abc|xyz|
+|114514|1919810|
+
+---
+layout: two-cols
+---
+# Markdown 語法
+## 8. 代碼塊
+
+This is a normal paragraph:
+
+    This is a code block.
+
+
 ---
 
 layout: default

@@ -149,9 +149,14 @@ layout: two-cols
 ## 4. 鏈結
 
 ```md
+這是一個鏈結
 [link](http://example.com)
 
 ![](https://example/image.jpg)
+
+這個會被編譯成一個鏈結
+http://example.com
+
 ```
 ::right::
 
@@ -164,6 +169,8 @@ layout: two-cols
 [link](http://example.com)
 
 ![](https://i.pximg.net/img-original/img/2023/05/16/14/57/30/108174609_p0.png)
+
+http://example.com
 ---
 layout: two-cols
 ---
@@ -291,7 +298,7 @@ layout: two-cols
   情人就是指针，用的时候一定要注意，要不然就带来巨大的灾难。
 
 - [ ] 列表和TODO一起食用效果更佳
-- [x] 在TODO中使用x來標記這個TODO是否完成
+- [x] 在TODO中使用x來標記這個TODO為完成
 
 ```
 ::right::
@@ -345,13 +352,41 @@ layout: two-cols
 layout: two-cols
 ---
 # Markdown 語法
-## 8. 代碼塊
+## 8. 代碼塊 & 程式碼
 
-This is a normal paragraph:
+```md
+這是一個正常語句
 
-    This is a code block.
+`使用單個反引號包裹就會變成代碼塊`
 
+使用三個反引號包裹的語句就會變成程式碼
 
+\```Java
+Gril gf = new Gril();
+My.gf = gf;
+
+\```
+
+```
+
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+這是一個正常語句
+
+`使用單個反引號包裹就會變成代碼塊`
+
+使用三個反引號包裹的語句就會變成程式碼
+
+```Java
+Gril gf = new Gril();
+My.gf = gf;
+```
 ---
 
 layout: default

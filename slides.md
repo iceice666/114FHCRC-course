@@ -310,13 +310,13 @@ layout: two-cols
 ```md
 - 要讓清單看起來更漂亮，可以使用縮排
 
-- 爱情
+- 愛情
 
-  爱情就是死循环，一旦执行就陷进去了；
-  爱上一个人，就是内存泄漏–你永远释放不了；
-  真正爱上一个人的时候，那就是常量限定，永远不会改变；
-  女朋友就是私有变量，只有我这个类才能调用；
-  情人就是指针，用的时候一定要注意，要不然就带来巨大的灾难。
+  愛情就是死循環，一旦執行就陷進去了；
+  愛上一個人，就是內存洩漏–你永遠釋放不了；
+  真正愛上一個人的時候，那就是常量限定，永遠不會改變；
+  女朋友就是私有變量，只有我這個類才能調用；
+  情人就是指針，用的時候一定要注意，要不然就帶來巨大的災難。
 
 - [ ] 列表和TODO一起食用效果更佳
 - [x] 在TODO中使用x來標記這個TODO為完成
@@ -332,16 +332,16 @@ layout: two-cols
 
 - 要讓清單看起來更漂亮，可以使用縮排
 
-- 爱情
+- 愛情
 
-  爱情就是死循环，一旦执行就陷进去了；
-  爱上一个人，就是内存泄漏–你永远释放不了；
-  真正爱上一个人的时候，那就是常量限定，永远不会改变；
-  女朋友就是私有变量，只有我这个类才能调用；
-  情人就是指针，用的时候一定要注意，要不然就带来巨大的灾难。
+  愛情就是死循環，一旦執行就陷進去了；
+  愛上一個人，就是內存洩漏–你永遠釋放不了；
+  真正愛上一個人的時候，那就是常量限定，永遠不會改變；
+  女朋友就是私有變量，只有我這個類才能調用；
+  情人就是指針，用的時候一定要注意，要不然就帶來巨大的災難。
 
 - [ ] 列表和TODO一起食用效果更佳
-- [x] 在TODO中使用x來標記這個TODO是否完成
+- [x] 在TODO中使用`x`來標記這個TODO為完成
 
 ---
 layout: two-cols
@@ -408,16 +408,7 @@ My.gf = gf;
 Gril gf = new Gril();
 My.gf = gf;
 ```
----
-layout: default
----
-# Markdown 進階
 
-## 編譯是什麼？能吃嗎？
-
-Markdown 可以變成我們所看到的樣子，是因為有一個叫做編譯器的東西，這個東西會把 Markdown 語法轉換成 HTML 語法，讓瀏覽器能夠正確顯示出來。
-所以，Markdown 語法其實就是一種標記語言，和 HTML 一樣，只是比 HTML 簡單很多。
-也因為他是被編譯成 HTML 的，所以他可以和 HTML 混用，這樣就可以做出更多更複雜的東西了。
 
 ---
 layout: default
@@ -429,4 +420,122 @@ layout: default
 Slidev 旨在為開發者提供靈活性和交互性，通過使用他們已經熟悉的工具和技術，使他們的演示文稿更加有趣、更具表現力和吸引力。
 
 當使用所見即所得的編輯器時，人們很容易被樣式選項所干擾。Slidev 通過分離內容和視覺效果來彌補這一點。這使你能夠一次專注於一件事，同時也能夠重複使用社區中的主題。Slidev並不尋求完全取代其他幻燈片製作工具。相反，它專注於迎合開發者社區的需求。
+
+[Slidev Doc]("https://cn.sli.dev/guide/why.html")
+
+---
+layout: default
+---
+# Markdown 進階
+
+## 編譯是什麼？能吃嗎？
+
+Markdown 可以變成我們所看到的樣子，是因為有一個叫做編譯器的東西，這個東西會把 Markdown 語法轉換成 HTML 語法，讓瀏覽器能夠正確顯示出來。
+
+所以，Markdown 語法其實就是一種標記語言，和 HTML 一樣，只是比 HTML 簡單很多。
+
+也因為他是被編譯成 HTML 的，所以他可以和 HTML 混用，這樣就可以做出更多更複雜的東西了。
+
+---
+layout:  two-cols
+---
+# Markdown 進階
+
+## 更大、更強的table
+
+HTML \<table\> 教學
+[W3S Table](https://www.w3schools.com/html/html_tables.asp)
+
+
+
+::right::
+<br/>
+<br/>
+<br/>
+<br/>
+
+<table>
+  <caption>Sample Table</caption>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Footer Content</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+---
+layout: default
+---
+# Markdown 進階
+
+## iframe：強力外部支援！
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t9N5Msr_Ftg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<del><small>這部我搬的，誒嘿嘿</small></del>
+
+---
+layout: two-cols
+---
+# Markdown 進階
+
+## 連結路徑問題
+
+這裡有一些文件和資料夾
+
+``` txt
+/ (Root)
+  ├───Folder A
+  │   ├───File A1
+  │   └───File A2
+  ├───Folder B
+  │   ├───Subfolder B1
+  │   │   ├───File B11
+  │   │   └───File B12
+  │   ├───File B2
+  │   └───Current file.md
+  ├───File C1
+  └───File C2
+
+
+```
+
+::right::
+
+現在我們的檔案在 `/Folder B/Current file.md`
+
+> 臨時抱佛腳
+> - `.` 是當前目錄，也就是 `/Folder B/`
+> - `..` 是上一層目錄，也就是 `/`
+
+- 要連結到 `File B2`，我們可以這樣寫：<br/>`./File B2` 或 `File B2`
+
+- 要連結到 `File B1`，我們可以這樣寫：<br/>`./Subfolder B1/File B1` 或 `Subfolder B1/File B1`
+
+- 要連結到 `File C1`，我們可以這樣寫：<br/>`../File C1`
+
+- 要連結到 `File A1`，我們可以這樣寫：<br/>`../Folder A/File A1`
+
+
+
 

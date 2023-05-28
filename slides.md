@@ -152,7 +152,7 @@ layout: two-cols
 這是一個鏈結
 [link](http://example.com)
 
-![](https://example/image.jpg)
+
 
 這個會被編譯成一個鏈結
 http://example.com
@@ -165,12 +165,33 @@ http://example.com
 <br/>
 <br/>
 <br/>
+這是一個鏈結
 
 [link](http://example.com)
 
-![](https://i.pximg.net/img-original/img/2023/05/16/14/57/30/108174609_p0.png)
+這個會被編譯成一個鏈結
 
 http://example.com
+---
+layout: two-cols
+---
+# Markdown 語法
+
+## 4. 鏈結
+```md
+這是一個圖片
+![](https://example/image.jpg)
+```
+
+<del> sensei 總力戰別凹了來hardcore擺爛吧 </del>
+
+::right::
+
+這是一個圖片....?
+
+![](/sensei.gif)
+
+
 ---
 layout: two-cols
 ---
@@ -388,36 +409,24 @@ Gril gf = new Gril();
 My.gf = gf;
 ```
 ---
-
 layout: default
 ---
-# 基於Markdown的其他產品
+# Markdown 進階
 
-- Remark.js
-- Slidev
+## 編譯是什麼？能吃嗎？
 
----
-layout: default
----
-
-# Remark.js
-
-Remark 是一種基於 Markdown 的簡報工具，它允許用戶使用簡單的文本標記語法創建漂亮的簡報。Remark 具有以下特點：
-
-- 簡單明瞭：Remark 使用 Markdown 語法，無需複雜的排版，使用者可以專注於內容的撰寫。
-- 豐富的佈局和樣式：Remark 提供了多種佈局和樣式選項，讓用戶輕鬆創建出令人驚艷的簡報。
-- 動態特效和互動功能：Remark 支持使用 CSS 和 JavaScript 添加動態特效和交互功能，使得簡報更具吸引力和互動性。
+Markdown 可以變成我們所看到的樣子，是因為有一個叫做編譯器的東西，這個東西會把 Markdown 語法轉換成 HTML 語法，讓瀏覽器能夠正確顯示出來。
+所以，Markdown 語法其實就是一種標記語言，和 HTML 一樣，只是比 HTML 簡單很多。
+也因為他是被編譯成 HTML 的，所以他可以和 HTML 混用，這樣就可以做出更多更複雜的東西了。
 
 ---
 layout: default
 ---
-# Slidev
+# 用Markdown做簡報？泰褲啦！
+
+### Slidev
 
 Slidev 旨在為開發者提供靈活性和交互性，通過使用他們已經熟悉的工具和技術，使他們的演示文稿更加有趣、更具表現力和吸引力。
 
 當使用所見即所得的編輯器時，人們很容易被樣式選項所干擾。Slidev 通過分離內容和視覺效果來彌補這一點。這使你能夠一次專注於一件事，同時也能夠重複使用社區中的主題。Slidev並不尋求完全取代其他幻燈片製作工具。相反，它專注於迎合開發者社區的需求。
 
----
-layout: end
----
-# END

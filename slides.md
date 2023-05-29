@@ -476,14 +476,14 @@ layout: two-cols
 ```
 ::right::
 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 也就是：
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 
 <ol>
     <li> foo </li>

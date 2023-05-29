@@ -10,7 +10,8 @@
     "@slidev/cli": "^0.41.0",
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-dracula": "^0.1.0"
   },
   "devDependencies": {
     "@iconify-json/ic": "^1.1.13",

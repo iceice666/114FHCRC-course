@@ -7,7 +7,7 @@ fonts:
   # 用于代码块、内联代码等
   mono: 'Noto Sans Mono'
 layout: intro
-theme: dracula
+theme: default
 ---
 
 # 報告、筆記的好幫手
@@ -382,7 +382,7 @@ layout: two-cols
 
 使用三個反引號包裹的語句就會變成程式碼
 
-\```Java
+\```java
 Gril gf = new Gril();
 My.gf = gf;
 
@@ -404,7 +404,7 @@ My.gf = gf;
 
 使用三個反引號包裹的語句就會變成程式碼
 
-```Java
+```java
 Gril gf = new Gril();
 My.gf = gf;
 ```
@@ -547,5 +547,4 @@ layout: two-cols
 - 要連結到 `File C1`，我們可以這樣寫：<br/>`../File C1`
 
 - 要連結到 `File A1`，我們可以這樣寫：<br/>`../Folder A/File A1`
-
 

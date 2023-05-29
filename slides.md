@@ -152,11 +152,8 @@ layout: two-cols
 這是一個鏈結
 [link](http://example.com)
 
-
-
 這個會被編譯成一個鏈結
 http://example.com
-
 ```
 ::right::
 
@@ -446,7 +443,60 @@ layout: default
 
 這裡有一個索引不連續的有序列表
 
+```md
 
+1. foo
+1. bar
+4. halo
+5. nihao
+1. mian
+4. return o
+
+
+```
+
+---
+layout: two-cols
+---
+# Markdown 進階
+
+## 有序列表的編譯
+
+他會被編譯成：
+```md
+<ol>
+    <li> foo </li>
+    <li> bar </li>
+    <li> halo </li>
+    <li> nihao </li>
+    <li> mian </li>
+    <li> return o </li>
+</ol>
+
+```
+::right::
+
+也就是：
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<ol>
+    <li> foo </li>
+    <li> bar </li>
+    <li> halo </li>
+    <li> nihao </li>
+    <li> mian </li>
+    <li> return o </li>
+</ol>
+
+這就能解釋爲什麼索引會自動排序
+
+因爲HTML幫你排好了
 
 ---
 layout:  two-cols
@@ -500,7 +550,7 @@ layout: default
 ---
 # Markdown 進階
 
-## iframe：強力外部支援！
+## \<iframe\> ：強力外部支援！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t9N5Msr_Ftg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -547,4 +597,3 @@ layout: two-cols
 - 要連結到 `File C1`，我們可以這樣寫：<br/>`../File C1`
 
 - 要連結到 `File A1`，我們可以這樣寫：<br/>`../Folder A/File A1`
-

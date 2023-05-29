@@ -115,7 +115,7 @@ layout: two-cols
 
 **粗體**
 
-***粗斜體***
+***斜體+粗體=粗斜體***
 
 <del> 刪除線 </del>
 
@@ -134,7 +134,7 @@ layout: two-cols
 
 **粗體**
 
-***粗斜體***
+***斜體+粗體=粗斜體***
 
 <del> 刪除線 </del>
 
@@ -418,7 +418,7 @@ Slidev 旨在為開發者提供靈活性和交互性，通過使用他們已經�
 
 當使用所見即所得的編輯器時，人們很容易被樣式選項所干擾。Slidev 通過分離內容和視覺效果來彌補這一點。這使你能夠一次專注於一件事，同時也能夠重複使用社區中的主題。Slidev並不尋求完全取代其他幻燈片製作工具。相反，它專注於迎合開發者社區的需求。
 
-[Slidev Doc]("https://cn.sli.dev/guide/why.html")
+[Slidev Doc](https://cn.sli.dev/guide/why.html)
 
 ---
 layout: default
@@ -505,16 +505,11 @@ layout:  two-cols
 
 ## 更大、更強的table
 
-HTML \<table\> 教學
-[W3S Table](https://www.w3schools.com/html/html_tables.asp)
-
-
-
-::right::
-<br/>
-<br/>
-<br/>
-<br/>
+<style>
+code {
+    font-size:13px;
+}
+</style>
 
 <table>
   <caption>Sample Table</caption>
@@ -544,6 +539,40 @@ HTML \<table\> 教學
   </tfoot>
 </table>
 
+HTML \<table\> 教學
+[W3S Table](https://www.w3schools.com/html/html_tables.asp)
+
+::right::
+
+```md
+<table>
+  <caption>Sample Table</caption>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Footer Content</td>
+    </tr>
+  </tfoot>
+</table>
+```
 
 ---
 layout: default

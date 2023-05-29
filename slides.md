@@ -7,7 +7,7 @@ fonts:
   # 用于代码块、内联代码等
   mono: 'Noto Sans Mono'
 layout: intro
-theme: default
+theme: dracula
 ---
 
 # 報告、筆記的好幫手
@@ -436,6 +436,18 @@ Markdown 可以變成我們所看到的樣子，是因為有一個叫做編譯�
 
 也因為他是被編譯成 HTML 的，所以他可以和 HTML 混用，這樣就可以做出更多更複雜的東西了。
 
+
+---
+layout: default
+---
+# Markdown 進階
+
+## 有序列表的編譯
+
+這裡有一個索引不連續的有序列表
+
+
+
 ---
 layout:  two-cols
 ---
@@ -535,7 +547,5 @@ layout: two-cols
 - 要連結到 `File C1`，我們可以這樣寫：<br/>`../File C1`
 
 - 要連結到 `File A1`，我們可以這樣寫：<br/>`../Folder A/File A1`
-
-
 
 

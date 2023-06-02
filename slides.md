@@ -635,7 +635,7 @@ layout: two-cols
 
 - 要連結到 `File B2`，我們可以這樣寫：<br/>`./File B2` 或 `File B2`
 
-- 要連結到 `File B1`，我們可以這樣寫：<br/>`./Subfolder B1/File B1` 或 `Subfolder B1/File B1`
+- 要連結到 `File B1`，我們可以這樣寫：<br/>`./Subfolder B1/File B11` 或 `Subfolder B1/File B11`
 
 - 要連結到 `File C1`，我們可以這樣寫：<br/>`../File C1`
 

@@ -8,6 +8,8 @@ fonts:
   mono: 'Noto Sans Mono'
 layout: intro
 theme: default
+drawings: 
+  syncAll: false
 ---
 
 # 報告、筆記的好幫手

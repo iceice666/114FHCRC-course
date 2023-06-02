@@ -30,9 +30,11 @@ Markdown 的優勢包括：
 - 清晰結構：Markdown 的標記語法直觀明確，使得文本的結構和內容易於理解和閱讀。
 - 多格式轉換：Markdown 可以方便地轉換為其他格式，如 HTML、PDF、Word 等，使得文檔在不同平台和場景中的使用更加靈活。
 
+ 
 
 ### Try try see : [HackMD](https://hackmd.io/new)
 
+<!--  易學易用： typora notion -->
 ---
 layout: two-cols
 ---
@@ -142,6 +144,7 @@ layout: two-cols
 
 <u>底線</u>
 
+<!-- ~在hackmd中是刪除線 -->
 
 ---
 layout: two-cols
@@ -154,7 +157,7 @@ layout: two-cols
 這是一個鏈結
 [link](http://example.com)
 
-這個會被編譯成一個鏈結
+這個會被變成（編譯成) 一個鏈結
 http://example.com
 ```
 ::right::
@@ -190,6 +193,7 @@ layout: two-cols
 
 ![](/sensei.gif)
 
+<!-- https://picsum.photos -->
 
 ---
 layout: two-cols
@@ -249,7 +253,7 @@ layout: two-cols
 > > 這是一個嵌套的引言
 > bra bra bra ...
 
-
+<!-- 換行會變成空格 -->
 ---
 layout: two-cols
 ---

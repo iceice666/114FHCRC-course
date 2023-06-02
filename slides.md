@@ -9,7 +9,7 @@ fonts:
 layout: intro
 theme: default
 drawings: 
-  syncAll: false
+  presenterOnly: true 
 ---
 
 # 報告、筆記的好幫手

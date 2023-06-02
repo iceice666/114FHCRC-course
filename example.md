@@ -44,7 +44,7 @@ http://example.com
 
 這是一個圖片....?
 
-![](/sensei.gif)
+![](https://picsum.photos/200/300)
 
 
 

@@ -210,7 +210,7 @@ Regex101: https://regex101.com/r/cHFpfp
 layout: cover
 ---
 
-#  非常慢Regex来自Cloudflare,使整个公司瘫痪
+#  非常慢Regex来自Cloudflare,使整个公司癱瘓
 
 ---
 layout: default

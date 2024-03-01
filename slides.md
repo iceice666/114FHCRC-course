@@ -126,6 +126,14 @@ layout: 'default'
 
 ## 隨堂小測
 
+電話號碼09開頭後面有8個數字
+
+---
+layout: 'default'
+---
+
+## 隨堂小測
+
 Regex101: https://regex101.com/r/cHFpfp
 
 一個IP地址的範圍爲0.0.0.0 到 255.255.255.255  

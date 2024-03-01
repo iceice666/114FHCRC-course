@@ -210,14 +210,14 @@ Regex101: https://regex101.com/r/cHFpfp
 layout: cover
 ---
 
-#  一個簡單的Regex卻導致全球80%網站無法訪問？
+#  非常慢Regex来自Cloudflare,使整个公司瘫痪
 
 ---
 layout: default
 ---
 
 
-##  一個簡單的Regex卻導致全球80%網站無法訪問？
+##  一個簡單的Regex卻導致全球數億網站無法訪問？
 
 Cloudflare工程師在2019年7月2日進行的一些改進，以偵測跨網站腳本(XSS)攻擊並阻止這些惡意行為。   
 惡意攻擊者可以在URL中加入腳本程式碼，當網站載入時自動執行。   
@@ -244,8 +244,8 @@ font-size: 10px;
 }
 </style>
 
-##  一個簡單的Regex卻導致全球80%網站無法訪問？
-作為內容傳遞(分發)網路，CloudFlare在全球的各個地方部署了數千臺的伺服器  
+##  一個簡單的Regex卻導致全球數億網站無法訪問？
+作為內容傳遞(分發)網路(CDN)，CloudFlare在全球的各個地方部署了數千臺的伺服器  
 用戶可以向離他們最近的伺服器發送請求  
 這些伺服器可以在將請求轉發給源伺服器前進行驗證  
 <br/>
@@ -255,7 +255,7 @@ font-size: 10px;
 <summary>如何利用Regex來過濾惡意URL?</summary>
 例
 絕大部分的時候，一個正常的URL絕對不會包含SQL指令<br/>
-<code>http://lol.com/users?id=1; DROP TABLE users;</code><div class="small">(怎麽動不動就Drop別人Table啊</div>
+<code>http://example.com/users?id=1; DROP TABLE users;</code><div class="small">(怎麽動不動就Drop別人Table啊</div>
 可以使用以下Regex來偵測: <br/>
 <code>('|b)(SELECT|INSERT|DROP|UPDATE|DELETE|UNION|EXEC|CREATE|INTO|FROM|WHERE)\b.*</code>
 </details>
@@ -326,6 +326,42 @@ layout: default
 全世界的WAF伺服器都炸了  
 他們發現伺服器的的CPU以100%超負荷運行  
 結果他們損失了80%的客戶流量
+
+數億的網站都使用CloudFlare的CDN
+意味著這些網站也掛了
+
+最終他們關閉了WAF並回滾了那條糟糕的規則
+
+---
+layout: default
+---
+
+## 為什麼防火牆導致CPU使用率暴增？
+
+問題在於表達試的後綴：`.*(?:.*=.*)`
+
+<details>
+<summary>非捕獲組(non-capturing group)是啥</summary>
+他代表要匹配的內容但不包含在輸出中
+
+input: `http://example.com/foo`  
+regex: `(?:https?)://([\w]+)(/[\w/]*)`  
+output: `example.com` `/foo`
+
+</details>
+
+<details>
+<summary>所以regex引擎要匹配如下規則：</summary>
+
+- `.*`: 任意數量的字元
+- `.*`: 任意數量的字元
+- `=` : 一個等號
+- `.*`: 任意數量的字元
+
+</details>
+<!--切regex101做演示-->
+
+![](https://blog.cloudflare.com/content/images/2019/07/failing-x-x.png)
 
 ---
 layout: end

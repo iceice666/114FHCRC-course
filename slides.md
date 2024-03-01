@@ -361,6 +361,12 @@ output: `example.com` `/foo`
 </details>
 <!--切regex101做演示-->
 
+---
+layout: default
+---
+
+## 為什麼防火牆導致CPU使用率暴增？
+
 ![](https://blog.cloudflare.com/content/images/2019/07/failing-x-x.png)
 
 ---

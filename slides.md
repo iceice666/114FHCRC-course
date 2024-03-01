@@ -131,7 +131,7 @@ Regex101: https://regex101.com/r/cHFpfp
 一個IP地址的範圍爲0.0.0.0 到 255.255.255.255  
 
 <details>
-        <summary>請你用regex來檢查以下是否都是合法的IP地址</summary>
+        <summary>請你用regex來檢查以下是否都是合法的IPv4地址</summary>
 <table>
 <tbody>
 

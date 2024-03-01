@@ -206,6 +206,114 @@ Regex101: https://regex101.com/r/cHFpfp
 
 </details>
 
+---
+layout: cover
+---
+
+#  一個簡單的Regex卻導致全球80%網站無法訪問？
+
+---
+layout: default
+---
+
+
+##  一個簡單的Regex卻導致全球80%網站無法訪問？
+
+Cloudflare工程師在2019年7月2日進行的一些改進，以偵測跨網站腳本(XSS)攻擊並阻止這些惡意行為。   
+惡意攻擊者可以在URL中加入腳本程式碼，當網站載入時自動執行。   
+這可能會導致用戶的憑證被發送到駭客的電子郵件地址，從而導致重大損失。  
+Cloudflare使用正規表示式來進行檢查可疑的URL。  
+然而，他們提交的一個規則有問題，導致整個公司癱瘓。
+
+<details>
+<summary>XSS是什麼？</summary>
+XSS（跨網站腳本）攻擊是一種網絡安全漏洞，它允許攻擊者將惡意腳本注入到網頁中的用戶端（通常是通過網頁應用程序）上。  
+當受害者訪問帶有惡意腳本的網頁時，該腳本就會在他們的瀏覽器中運行，  
+進而使攻擊者能夠竊取用戶的cookie、session token等敏感資訊，或者修改網頁上的內容
+
+將這種惡意URL發送給毫無戒備的小白，boom!  
+他的帳號就是你的了
+</details>
+
+---
+layout: default
+---
+<style>
+.small {
+font-size: 10px;
+}
+</style>
+
+##  一個簡單的Regex卻導致全球80%網站無法訪問？
+作為內容傳遞(分發)網路，CloudFlare在全球的各個地方部署了數千臺的伺服器  
+用戶可以向離他們最近的伺服器發送請求  
+這些伺服器可以在將請求轉發給源伺服器前進行驗證  
+<br/>
+在CloudFlare的方案中，安全檢查由他們的WAF(網絡應用安全防火牆)提供  
+防火牆規則利用**Regex**來配置  
+<details>
+<summary>如何利用Regex來過濾惡意URL?</summary>
+例
+絕大部分的時候，一個正常的URL絕對不會包含SQL指令<br/>
+<code>http://lol.com/users?id=1; DROP TABLE users;</code><div class="small">(怎麽動不動就Drop別人Table啊</div>
+可以使用以下Regex來偵測: <br/>
+<code>('|b)(SELECT|INSERT|DROP|UPDATE|DELETE|UNION|EXEC|CREATE|INTO|FROM|WHERE)\b.*</code>
+</details>
+
+---
+layout: default
+---
+
+## 一個簡單的Regex卻導致全球80%網站無法訪問？
+所以，工程師只是加了一個檢測規則:  
+
+```txt
+?:(?:\"|'|\]|\}|\\|\d|(?:nan|infinity|true|false|null|undefined|symbol|math)|\`|\-|\+)+[)]*;
+?((?:\s|-|~|!|{}|\|\||\+)*.*(?:.*=.*)))
+```
+
+- `(?:nan|infinity|true|false|null|undefined|symbol|math)` 是javascript的關鍵字
+- `\"|'|\]|\}` 在嘗試尋找跳脫html或javascript的字元 (經典 'OR 1=1')
+
+
+<!-- 可以看到，他在匹配一些javascript的關鍵字 -->
+<!-- 以及一些可以跳脫html或javascript的字符，如引號和大括號 -->
+<!-- 也可以看到他在匹配一些URL查詢字符串(`param=query_string`)，這是XSS常見切入點 -->
+
+<br/>
+
+然後就發了一個拉取請求到CloudFlare的代碼倉庫  
+CI build了包並跑了所有測試，讓審查人員相信這些改動是安全的  
+團隊的其他人員看了看表示看起來不錯就批准了並合併了修改  
+在這後CI發佈了新的release，在經過管理員批准後會自動部署到伺服器上  
+
+
+---
+layout: default
+---
+
+<style>
+.small {
+font-size: 10px;
+}
+</style>
+## 批准部署SOP的漏洞
+
+一般來說，CloudFlare的所有改動應遵守以下流程
+1. 自家員工的DOG節點
+2. 非付費用戶的PIG節點
+3. 多個客戶的Canary節點
+4. 部屬到全世界
+
+**BUT**
+
+WAF的部署是直接部署到全世界的，以迅速應對新的威脅
+
+而且一般來說，伺服器的升級是分批進行的<div class="small">你也不想你的服務突然同時下線吧</div>
+
+**しかし**
+
+
 
 ---
 layout: end
